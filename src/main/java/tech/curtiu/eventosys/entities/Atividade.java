@@ -3,7 +3,6 @@ package tech.curtiu.eventosys.entities;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Locale.Category;
 import java.util.Set;
 
 import jakarta.persistence.Entity;
@@ -92,12 +91,8 @@ public class Atividade {
         this.categoria = categoria;
     }
 
-    public Bloco getBloco() {
-        return bloco;
-    }
-
-    public void setBloco(Bloco bloco) {
-        this.bloco = bloco;
+    public List<Bloco> getBlocos() {
+        return blocos;
     }
 
 }
